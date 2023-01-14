@@ -1,0 +1,233 @@
+* { 
+    font-family: "Comic Sans MS";
+}
+
+/* логотип */
+.Header-logo {
+    transition: all 0.3s;
+    content: url("https://mrflamous.github.io/logo.png");
+    opacity: 0.5;
+}
+
+.Header-logo:hover {
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+.Header-logo:active {
+    filter: sepia(100%);
+}
+
+:root {
+    --text-color: #D3C1B3;
+    --color: #898989;
+    --body-bg: #252525;
+    --body-bg-faded: rgba(25, 25, 25, 0.93);
+    --sticky-bg: #C5745E;
+    
+    --button-primary-bg: #61564B;
+    --button-primary-bg-hover: #696057;
+    --button-primary-color: #CABBA7;
+    --button-bg: #494139;
+    --button-bg-hover: #52483F;
+    --button-bg-active: #5C5046;
+    --button-color: #A99682;
+    --button-toggled-bg: #252525;
+
+    --control-bg: #202020;
+    --control-color: #696969;
+
+    --hero-color: #9B9081;
+    --hero-bg: #212121;
+ 
+    --primary-color: #9B9081;
+    --secondary-color: #B3B3B3;
+    
+    --header-bg: #1B1B1B;
+    --header-control-color: #9B9081;
+    --header-color: #E9DDD3;
+    --header-colored-control-bg: #242424;
+    --header-colored-control-bg-fadedin: #242424;
+    --header-colored-control-color: #9B9081;
+    
+    --muted-color: #857B6E;
+    
+    --tag-bg: rgba(0,0,0,0.2);
+
+    --discussion-list-item-bg-hover: #202020;
+    
+    --header-control-bg: #454545;
+    --header-colored-control-bg-shaded: #282828;
+    
+    --link-color: #C3915F;
+    
+    --online-user-circle-color: #6c8953;
+}
+
+.PostMention,
+.UserMention {
+     background:#353535;
+     color:#898989;
+     border-radius:10px;
+     padding:2px 7px;
+     font-weight:600
+}
+
+.PostMention:hover,
+.UserMention:hover,
+.PostMention:active,
+.UserMention:active {
+ color:#999;
+}
+
+.SelectTagList>li.selected .icon::before {
+ color:#DADADA;
+ font-size:12px;
+ vertical-align:2px
+}
+
+@media (min-width: 768px) {
+ .TagDiscussionModal .Modal-header {
+  background:#212121;
+  padding:20px 20px 0
+ }
+ .TagDiscussionModal .Modal-header h3 {
+  text-align:left;
+  color:#898989;
+  font-size:16px
+ }
+}
+
+.SelectTagList>li.active {
+ background: #212121
+}
+
+h3 {
+    color: #898989;
+}
+
+.TagsLabel .TagLabel:first-child:last-child {
+ border-radius:10px 10px 4px 4px;
+}
+
+.TagsLabel .TagLabel:first-child {
+ border-radius:10px 0 0 4px
+}
+.TagsLabel .TagLabel:last-child {
+ border-radius: 0 10px 4px 0
+}
+
+.TagLabel {
+  font-family: "Comic Sans MS", Arial, sans-serif;
+  font-size: 90%;
+  font-weight: 600;
+  color: #D7D0C6;
+  text-transform: lowercase;
+}
+
+.TagLabel.colored .TagLabel-text {
+    color: #202020 !important;
+}
+
+img.Avatar {
+    --avatar-bg: rgba(0,0,0,0) !important;
+    filter: sepia(var(--sepia)%);
+}
+
+span.Avatar {
+    --avatar-bg: rgba(0,0,0,0) !important;
+    color: #EADECD;
+    background: linear-gradient(90deg, rgba(202,187,167,0.7) 0%, rgba(232,190,135,0.7) 100%);
+}
+
+div.UserCard {
+    background: linear-gradient(90deg, rgba(202,187,167,0.7) 0%, rgba(232,190,135,0.7) 100%);
+}
+
+button[aria-label="Изменить язык форума"] {
+    display: none;
+}
+
+li.item-nightmode { 
+    display: none;
+}
+
+.container {
+    width: 90%;
+}
+
+span.Button-label > span.username {
+    display: none;
+}
+
+.DiscussionHero .TagsLabel .TagLabel.colored {
+ background: rgba(0,0,0,0.15) !important;
+}
+
+.DiscussionHero .TagsLabel .TagLabel.colored > span {
+ color: #fff !important;
+}
+
+.TagLabel.colored.TagLabel--child > .TagLabel-text {
+    --tag-color: #D7D0C6 !important;
+}
+
+.DiscussionHero--colored {
+    --hero-bg: linear-gradient(90deg, rgba(202,187,167,0.7) 0%, rgba(232,190,135,0.7) 100%) !important;
+}
+
+li.item-link1, li.item-link2, li.item-link3 {
+    transition: all 0.3s;
+    opacity: 0.5;
+}
+
+li.item-link1:hover, li.item-link2:hover, li.item-link3:hover {
+    opacity: 0.8;
+    transform: scale(1.2);
+}
+
+a.TagLinkButton.hasIcon {
+    --color: #C3915F !important;
+}
+
+/* теги */
+
+/* информация о проекте / новости / обновления */
+*[style*="#1E2E3D"]:not(a) {
+    background: linear-gradient(90deg, rgba(55,88,124,1) 0%, rgba(76,121,171,1) 100%) !important;
+}
+
+/* общение */
+*[style*="#6dbb3e"]:not(a) {
+     background: linear-gradient(90deg, rgba(69,136,84,1) 0%, rgba(93,185,115,1) 100%) !important;
+}
+
+/* командные блоки */
+*[style*="#003333"]:not(a) {
+    background: linear-gradient(90deg, rgba(154,104,54,1) 0%, rgba(226,153,79,1) 100%) !important;
+}
+
+/* поддержка */
+*[style*="#4b93d1"]:not(a) {
+    background: linear-gradient(90deg, rgba(84,156,153,1) 0%, rgba(106,196,193,1) 100%) !important;
+}
+
+/* игровой раздел */
+*[style*="#9354ca"]:not(a) {
+    background: linear-gradient(90deg, rgba(158,92,182,1) 0%, rgba(203,119,235,1) 100%) !important;
+}
+
+/* жалобы */
+*[style*="#CC0000"]:not(a) {
+    background: linear-gradient(90deg, rgba(184,78,78,1) 0%, rgba(234,100,100,1) 100%) !important;
+}
+
+/* биржа */
+*[style*="#FF6600"]:not(a) {
+    background: linear-gradient(90deg, rgba(221,170,64,1) 0%, rgba(233,127,67,1) 100%) !important;
+}
+
+/* архив */
+*[style*="#B8860B"]:not(a) {
+    background: linear-gradient(90deg, rgba(177,98,51,1) 0%, rgba(223,123,64,1) 100%) !important;
+}
