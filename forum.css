@@ -131,7 +131,7 @@ h3 {
 
 img.Avatar {
     --avatar-bg: rgba(0,0,0,0) !important;
-    filter: sepia(var(--sepia)%);
+    filter: sepia(45%);
 }
 
 span.Avatar {
