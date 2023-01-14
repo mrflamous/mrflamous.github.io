@@ -17,6 +17,7 @@
 
 .Header-logo:active {
     filter: sepia(100%);
+    transform: scale(1)
 }
 
 /* --- */
@@ -47,8 +48,8 @@ a {
     transition: all 0.3s;
 }
 
-a:hover:not(.DiscussionListItem-main) {
-    transform: scale(1.1);
+a:hover:not(.DiscussionListItem-main) > :not(img) {
+    transform: scale(1.05);
 }
 
 a:active:not(.DiscussionListItem-main) {
@@ -56,6 +57,24 @@ a:active:not(.DiscussionListItem-main) {
 }
 
 /* --- */
+
+/* хех */
+
+a[href="/u/motyc"]:hover, a[href="https://forum.training-server.com/u/motyc"]:hover {
+    display: block;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 700px; /* Width of new image */
+    height: 799px; /* Height of new image */
+    padding-left: 700px; /* Equal to width of new image */
+    background: url(https://i.imgur.com/KDuNSsz.png) no-repeat;
+    transform: translate(-9000%);
+    transition-property: transform;
+    transition-duration: 60s;
+    animation: .5s linear 1s infinite alternate slidein;
+    cursor: help;
+    filter: sepia(1000%) grayscale(30%) brightness(200%);
+}
 
 /* цвета */
 
