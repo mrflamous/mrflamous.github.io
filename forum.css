@@ -1,8 +1,9 @@
 * { 
-    font-family: "Comic Sans MS";
+    font-family: "Comic Sans MS", "Roboto", Arial, sans-serif;
 }
 
-/* логотип */
+/* --- логотип --- */
+
 .Header-logo {
     transition: all 0.3s;
     content: url("https://mrflamous.github.io/logo.png");
@@ -17,6 +18,46 @@
 .Header-logo:active {
     filter: sepia(100%);
 }
+
+/* --- */
+
+/* --- анимации -- */
+
+.DiscussionListItem {
+    transition: all 0.3s;
+}
+.DiscussionListItem:hover {
+    transform: scale(1.03);
+}
+.DiscussionListItem:active {
+    transform: scale(0.98);
+}
+
+.Button {
+    transition: all 0.3s;
+}
+.Button:hover {
+    transform: scale(1.1);
+}
+.Button:active {
+    transform: scale(1);
+}
+
+a {
+    transition: all 0.3s;
+}
+
+a:hover:not(.DiscussionListItem-main) {
+    transform: scale(1.1);
+}
+
+a:active:not(.DiscussionListItem-main) {
+    transform: scale(1);
+}
+
+/* --- */
+
+/* цвета */
 
 :root {
     --text-color: #D3C1B3;
@@ -64,6 +105,10 @@
     --online-user-circle-color: #6c8953;
 }
 
+/* --- */
+
+/* --- ответы / упоминания --- */
+
 .PostMention,
 .UserMention {
      background:#353535;
@@ -89,12 +134,10 @@
 @media (min-width: 768px) {
  .TagDiscussionModal .Modal-header {
   background:#212121;
-  padding:20px 20px 0
  }
  .TagDiscussionModal .Modal-header h3 {
   text-align:left;
   color:#898989;
-  font-size:16px
  }
 }
 
