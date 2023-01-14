@@ -190,7 +190,33 @@ a.TagLinkButton.hasIcon {
     --color: #C3915F !important;
 }
 
-/* теги */
+/* реакции */
+
+*[fill="#667c99"] {
+    filter: sepia(100%);
+}
+
+.Reactions .CommentPost--Reactions {
+    background-color: #151515;
+}
+
+/* выбор эмодзи */
+
+.emojionearea .emojionearea-picker {
+    background: #1C1C1B;
+}
+
+.emojionearea .emojionearea-picker .emojionearea-scroll-area .emojionearea-category-title {
+     font-family:'Comic Sans MS',Helvetica,sans-serif;
+     color:#D3C1B3;
+     background:#1C1C1B;
+}
+
+.emojionearea .emojionearea-picker .emojionearea-filters, .emojionearea .emojionearea-picker .emojionearea-filters .emojionearea-filter.active {
+     background:#1C1C1B;
+}
+
+/* ========================================== теги ========================================== */
 
 /* информация о проекте / новости / обновления */
 *[style*="#1E2E3D"]:not(a) {
