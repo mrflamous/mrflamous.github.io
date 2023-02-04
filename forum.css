@@ -109,6 +109,10 @@ a:active:not(.DiscussionListItem-main) {
 
 /* --- */
 
+.Button.disabled {
+    background: #645f5b;
+}
+
 /* --- спойлеры -- */
 
 details {
