@@ -171,7 +171,7 @@ span.spoiler {
  background: #212121
 }
 
-h3:not(.TagTile-name) {
+h3:not(.TagTile-name):not(.DiscussionListItem-title) {
     color: #898989;
 }
 
