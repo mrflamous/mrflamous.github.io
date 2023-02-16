@@ -10,14 +10,24 @@
     opacity: 0.5;
 }
 
-.Header-logo:hover {
+.Header-logo, .Header-title:hover {
     opacity: 1;
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 .Header-logo:active {
     filter: sepia(100%);
     transform: scale(1)
+}
+
+.Header-title {
+    transition: all 0.3s;
+    opacity: 0.5;
+}
+
+h1.Header-title > a {
+    font-family: 'Comic Sans MS';
+    text-decoration: none;
 }
 
 /* --- */
@@ -92,6 +102,7 @@ a:active:not(.DiscussionListItem-main) {
     --header-colored-control-bg: #242424;
     --header-colored-control-bg-fadedin: #242424;
     --header-colored-control-color: #9B9081;
+    --header-colored-color: #E9DDD3;
     
     --muted-color: #857B6E;
     
