@@ -4,10 +4,26 @@
 
 /* --- блатные --- */
 
-a[href="/u/Top_4"] > span.username {
+div.PostUser > h3 > a[href="/u/Top_4"] > span.username {
     display: none;
 }
-a[href="/u/Top_4"]::after {
+div.PostUser > h3 > a[href="/u/Top_4"]:after {
+    content: "Мистер торч";
+    font-family: "Comic Sans MS";
+}
+
+h2.UserCard-identity > a[href="/u/Top_4"] > span.username {
+    display: none;
+}
+h2.UserCard-identity > a[href="/u/Top_4"]:after {
+    content: "Мистер торч";
+    font-family: "Comic Sans MS";
+}
+
+div.Post-likedBy > a[href="/u/Top_4"] > span.username {
+    display: none;
+}
+div.Post-likedBy > a[href="/u/Top_4"]:after {
     content: "Мистер торч";
     font-family: "Comic Sans MS";
 }
