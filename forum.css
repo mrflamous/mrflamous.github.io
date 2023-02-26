@@ -2,6 +2,16 @@
     font-family: "Roboto", Arial, sans-serif;
 }
 
+/* --- блатные --- */
+
+a[href="/u/Top_4"] > span.username {
+    display: none;
+}
+a[href="/u/Top_4"]::after {
+    content: "Мистер торч";
+    font-family: "Comic Sans MS";
+}
+
 /* --- логотип --- */
 
 .Header-logo {
@@ -26,7 +36,7 @@
 }
 
 h1.Header-title > a {
-    font-family: 'Roboto';
+    font-family: 'Comic Sans MS';
     text-decoration: none;
 }
 
